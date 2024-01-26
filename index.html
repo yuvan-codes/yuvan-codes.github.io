@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+        }
+        
+        .nav ul li {
+            display: inline-block;
+            margin: 10px;
+            font-weight: bold;
+            color: #555;
+            transition: color 0.3s ease;
+        }
+        
+        .nav ul li:hover {
+            color: #3498db;
+        }
+        
+        header {
+            background-color: #3498db;
+            padding: 15px 0;
+        }
+        
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .parent {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+        }
+        
+        .child {
+            text-align: center;
+        }
+        
+        .child h3 {
+            font-size: 24px;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .child h2 {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .child p {
+            font-size: 18px;
+            color: #555;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        img {
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        
+        .copy {
+            font-size: 14px;
+        }
+        
+        .plug ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .plug ul li {
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .plug a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .plug i {
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+        
+        .plug i:hover {
+            color: #3498db;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutMe.html">About Me</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="MyWorks.html">My Works</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="parent">
+        <img src="profile.jpg" alt="picture">
+        <div class="child">
+            <h3>I'm Yuvan Shankar</h3>
+            <h2>
+                Student | Developer
+            </h2>
+            <p>
+                Computer Science Engineering student and passionate software developer, transforming ideas into
+                innovative solutions.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="copy">
+            Copyright &copy; 2024 - Created by Yuvan Shankar S A
+        </div>
+        <div class="plug">
+            <ul>
+                <li><a href="https://github.com/yuvan-codes"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/yuvan-shankar-s-a-bb65132a4/"><i class="fa fa-linkedin-square"
+                            style="font-size: 30px;"></i></a></li>
+                <li><a href="https://www.instagram.com/yuvan_shankar_s_a/"><i class="fa fa-instagram"
+                            style="font-size: 30px;"></i></a></li>
+                <li><a href="mailto:yuvanshankar.sa@gmail.com"><i class="fa fa-envelope"
+                            style="font-size: 30px;"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
