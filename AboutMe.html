@@ -4,63 +4,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Under Construction</title>
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+        * {
             margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            padding: 0;
+            box-sizing: border-box;
             font-family: 'Arial', sans-serif;
         }
 
-        .container {
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        img {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            height: 300px;
+        }
+
+        .logo img {
+            height: 75px;
+            border-radius: 50px;
+        }
+
+        .logo {
+            background-color: white;
+            margin-left: 10px;
+            border-radius: 50px;
+        }
+
+        .nav {
             text-align: center;
+            margin-top: 20px;
         }
 
-        .construction-icon {
-            font-size: 60px;
-            color: #3498db;
+        .nav ul {
+            list-style-type: none;
+            border-radius: 10px;
         }
 
-        h1 {
-            font-size: 36px;
-            margin: 20px 0;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-
-        .back-link {
-            text-decoration: none;
+        .nav ul li {
+            display: inline-block;
+            margin: 10px;
             font-weight: bold;
-            font-size: 16px;
+            color: #555;
+            transition: color 0.3s ease;
         }
 
-        a {
-            color: black;
+        .nav ul li a {
+            padding: 5px;
         }
 
         a:hover {
-            color: #3498db;
+            color: #000000;
+            background-color: white;
             transition: color 0.3s ease;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.75);
+        }
+
+        a:active {
+            color: #000000;
+        }
+
+        header {
+            background-color: #3498db;
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer {
+            display: flex fixed;
+            bottom: 0;
+            flex-direction: column;
+            align-self: flex-end;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .copy {
+            font-size: 14px;
+        }
+
+        .plug ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .plug ul li {
+            display: inline-block;
+            margin: 10px;
+
+        }
+
+        .plug a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .plug i {
+            font-size: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .plug i:hover {
+            color: #3498db;
+        }
+
+        .parent-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .parent-content h2 {
+            color: #3498db;
+        }
+
+        .parent-content p {
+            color: #555;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="construction-icon">&#x1F6A7;</div>
-        <h1>Page Under Construction</h1>
-        <p>Sorry for the inconvenience. This page is currently under construction.</p>
-        <p>Check back soon for updates!</p>
-        <a href="index.html" class="back-link">Go back to Home</a>
+    <header>
+        <div class="logo">
+            <img src="MyLogo.png" alt="logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a class="active" href="AboutMe.html">About Me</a></li>
+                <li><a class="active" href="edu.html">Education</a></li>
+                <li><a class="active" href="MyWorks.html">My Works</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="parent">
+        <div class="parent-content">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Yuvan Shankar - Profile Picture">
+            <p>Hello! I'm Yuvan Shankar, a dedicated and enthusiastic Computer Science Engineering student with a
+                profound passion for software development. Currently navigating the exciting realms of academia, I find
+                immense joy in translating complex problems into elegant, efficient solutions through the art of
+                coding.</p>
+
+            <p>My journey into the world of technology began with a curiosity-driven exploration of programming languages
+                and computer systems. This exploration evolved into a full-fledged commitment to pursuing excellence in
+                the field. I am continually honing my skills in algorithms, data structures, and various programming
+                paradigms to stay at the forefront of technological advancements.</p>
+
+            <p>As a lifelong learner, I embrace challenges that allow me to expand my knowledge and skill set. Beyond the
+                academic sphere, I actively engage in personal projects, hackathons, and collaborative endeavors to
+                apply my theoretical knowledge to real-world scenarios. This hands-on experience has been instrumental
+                in shaping my problem-solving abilities and enhancing my creativity as a software developer.</p>
+
+            <p>My journey extends beyond mere code-writing; I am an advocate for user-centric design and the seamless
+                integration of technology into our daily lives. I believe in leveraging technology to create meaningful
+                and user-friendly solutions that have a positive impact on society.</p>
+
+            <p>When I'm not immersed in lines of code, you can find me exploring the latest developments in the tech
+                industry, sharing my insights on various platforms, and contributing to the vibrant developer
+                community. I am also passionate about mentorship and enjoy sharing my knowledge with others, helping
+                them navigate their own journeys in the world of software development.</p>
+
+            <p>Join me on this coding odyssey as I continue to grow, learn, and contribute to the ever-evolving
+                landscape of technology. Let's build something extraordinary together!</p>
+        </div>
     </div>
+    <footer>
+        <div class="copy">
+            Copyright &copy; 2024 - Created by Yuvan Shankar S A
+        </div>
+        <div class="plug">
+            <ul>
+                <li><a href="https://github.com/yuvan-codes"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/yuvan-shankar-s-a-bb65132a4/"><i class="fa fa-linkedin-square"
+                            style="font-size: 30px;"></i></a></li>
+                <li><a href="https://www.instagram.com/yuvan_shankar_s_a/"><i class="fa fa-instagram"
+                            style="font-size: 30px;"></i></a></li>
+                <li><a href="mailto:yuvanshankar.sa@gmail.com"><i class="fa fa-envelope"
+                            style="font-size: 30px;"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
